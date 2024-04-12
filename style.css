@@ -14,11 +14,17 @@ h1 {
 }
 
 #product-cards {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    padding: 0 50px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #product-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 #product-card {
